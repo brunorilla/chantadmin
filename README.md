@@ -2,7 +2,7 @@
 **Alcance**: 
 
  Dos usuarios principales:
-    *Administrador
-    *Residente
+    1.Administrador
+    2.Residente
     
  _Futuros features_
