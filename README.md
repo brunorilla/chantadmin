@@ -1,7 +1,7 @@
 # Chantadmin
+**Alcance**: 
 
-- Alcance: 
-  A)Dos usuarios principales:
+ Dos usuarios principales:
     1) Administrador
     2) Residente
 
