@@ -6,6 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.projectchantadmin.R
+import com.example.projectchantadmin.entities.User
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -22,12 +25,20 @@ class fragment_login : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+
+    val db = Firebase.firestore
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+
+        var myUser = User("Nombre", "Apellido", 33, User.customer)
+        //Linkear base de datos y guardar MyUser
+        db.collection("TestDataBase").add(myUser)
     }
 
     override fun onCreateView(
