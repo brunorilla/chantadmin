@@ -2,10 +2,10 @@ package com.example.projectchantadmin.entities
 
 class User(nombre: String, apellido: String, edad: Int, rol: String) {
 
-    private var nombre: String
-    private var apellido: String
-    private var edad: Int
-    private var rol: String
+    var nombre: String
+    var apellido: String
+    var edad: Int
+    var rol: String
 
     companion object {
         val customer: String = "customer"
