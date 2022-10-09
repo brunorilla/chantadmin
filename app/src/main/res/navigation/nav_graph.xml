@@ -9,10 +9,22 @@
         android:id="@+id/fragment_start"
         android:name="com.example.projectchantadmin.fragments.Fragment_start"
         android:label="fragment_start"
-        tools:layout="@layout/fragment_start" />
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_fragment_start_to_fragment_main"
+            app:destination="@id/fragment_main" />
+        <action
+            android:id="@+id/action_fragment_start_to_fragment_customer"
+            app:destination="@id/fragment_customer" />
+    </fragment>
     <fragment
         android:id="@+id/fragment_main"
-        android:name="com.example.projectchantadmin.fragments.Fragment_main"
+        android:name="com.example.projectchantadmin.fragments.Fragment_admin"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_admin" />
+    <fragment
+        android:id="@+id/fragment_customer"
+        android:name="com.example.projectchantadmin.fragments.Fragment_customer"
+        android:label="fragment_customer"
+        tools:layout="@layout/fragment_customer" />
 </navigation>
