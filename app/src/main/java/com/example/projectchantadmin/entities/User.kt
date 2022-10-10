@@ -1,11 +1,12 @@
 package com.example.projectchantadmin.entities
 
-class User(nombre: String, apellido: String, edad: Int, rol: String) {
+class User(name: String, lastName: String, age: Int, phone: Int) {
 
-    var nombre: String
-    var apellido: String
-    var edad: Int
-    var rol: String
+    var name: String
+    var lastName: String
+    var age: Int
+    var rol: String = "customer"
+    var phone: Int
 
     companion object {
         val customer: String = "customer"
@@ -13,10 +14,11 @@ class User(nombre: String, apellido: String, edad: Int, rol: String) {
     }
 
     init {
-        this.nombre = nombre
-        this.apellido = apellido
-        this.edad = edad
-        this.rol = rol
+        this.name = name
+        this.lastName = lastName
+        this.age = age
+        this.phone = phone
+        this.rol = User.customer
     }
 
 }
