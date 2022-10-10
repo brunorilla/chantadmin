@@ -1,11 +1,10 @@
 package com.example.projectchantadmin.entities
 
-class Department(user: User, floor: Int, cantHambient: Int) {
+class Apartment(user: User, floor: Int, cantHambient: Int) {
 
     var user: User
     var floor: Int
     var cantHambient: Int
-
 
     init {
         this.user = user
