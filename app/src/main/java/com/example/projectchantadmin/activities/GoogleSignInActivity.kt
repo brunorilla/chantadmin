@@ -1,26 +1,21 @@
 package com.example.projectchantadmin.activities
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import com.example.projectchantadmin.R
+import androidx.appcompat.app.AppCompatActivity
+import com.example.projectchantadmin.databinding.ActivityGoogleSignInBinding
+import java.io.Serializable
 
-class GoogleSignInActivity : AppCompatActivity() {
 
-    lateinit var buttonAdmin: Button
+class GoogleSignInActivity : AppCompatActivity(), Serializable {
+
+    private lateinit var binding: ActivityGoogleSignInBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_google_sign_in)
+        binding = ActivityGoogleSignInBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        buttonAdmin = findViewById(R.id.idbuttonadmin)
-
-        buttonAdmin.setOnClickListener{
-            startActivity(Intent(this, AdminActivity::class.java))
-        }
-
-
+        binding.textDisplayName.text = intent.getStringExtra("name")
 
     }
 }

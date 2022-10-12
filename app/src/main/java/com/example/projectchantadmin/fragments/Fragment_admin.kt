@@ -8,12 +8,12 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.projectchantadmin.R
 import com.example.projectchantadmin.entities.User
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
+//import com.google.firebase.firestore.ktx.firestore
+//import com.google.firebase.ktx.Firebase
 
 class Fragment_admin : Fragment() {
 
-    val db = Firebase.firestore
+    //val db = Firebase.firestore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
