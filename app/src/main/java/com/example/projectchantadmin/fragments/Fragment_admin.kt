@@ -18,7 +18,7 @@ class Fragment_admin : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        var myUser = User("Bruno", "Rilla", 33, 12341231)
+        var myUser = User("Bruno", "Rilla", 33, "12341231")
         //Linkear base de datos y guardar MyUser
         //db.collection("TestDataBase").add(myUser)
         Log.d("USER", myUser.toString())

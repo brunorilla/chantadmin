@@ -18,7 +18,7 @@ import com.google.firebase.ktx.Firebase
 import java.io.Serializable
 
 
-class ActivityLogin : AppCompatActivity() {
+class ActivityLogin : AppCompatActivity(), Serializable {
 
     private lateinit var googleSignInClient: GoogleSignInClient
     private lateinit var auth: FirebaseAuth
@@ -44,7 +44,6 @@ class ActivityLogin : AppCompatActivity() {
         binding.idLogout.setOnClickListener {
             logout()
         }
-
     }
 
     private fun logout() {
