@@ -1,12 +1,12 @@
 package com.example.projectchantadmin.entities
 
-class User(name: String, lastName: String, age: Int, phone: Int) {
+class User(name: String, lastName: String, age: Int, phone: String) {
 
     var name: String
     var lastName: String
     var age: Int
     var rol: String = "customer"
-    var phone: Int
+    var phone: String
 
     companion object {
         val customer: String = "customer"
