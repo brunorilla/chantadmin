@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_customer"
+    app:startDestination="@id/fragment_customer">
+    <fragment
+        android:id="@+id/fragment_customer"
+        android:name="com.example.projectchantadmin.fragments.Fragment_customer"
+        android:label="fragment_customer"
+        tools:layout="@layout/fragment_customer" />
+</navigation>

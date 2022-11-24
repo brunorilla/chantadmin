@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/id_menu_expensas"
+        android:icon="@drawable/ic_baseline_fact_check_24"
+        android:title="Expensas" />
+    <item
+        android:id="@+id/id_menu_propietario"
+        android:icon="@drawable/ic_baseline_accessibility_new_24"
+        android:title="Propietario" />
+</menu>

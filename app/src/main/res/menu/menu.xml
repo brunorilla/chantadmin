@@ -3,9 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/fragment1"
-        android:title="test1" />
+        android:id="@+id/listProductFragment"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
     <item
-        android:id="@+id/fragment2"
-        android:title="test2" />
+        android:id="@+id/customerActivity"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Setting" />
+    <item
+        android:id="@+id/logoutFragment"
+        android:icon="@drawable/ic_baseline_login_24"
+        android:title="Logout" />
 </menu>
